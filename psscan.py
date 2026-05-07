@@ -19,11 +19,6 @@ group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument("--pattern")
 group.add_argument("--web")
 
-parser.add_argument(
-    "--extern",
-    action = "store_true"
-)
-
 args = parser.parse_args()
 
 genome = {}
